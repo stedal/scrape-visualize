@@ -8,7 +8,7 @@ from bokeh.io import output_notebook, show
 from bokeh.layouts import row,column, widgetbox
 from bokeh.io import curdoc,show, output_file
 
-df = pd.read_csv('lx570.csv')
+df = pd.read_csv('herokuapp/data/lx570.csv')
 
 source = ColumnDataSource(df)
 #x = df.productionDate
