@@ -22,7 +22,7 @@ p1.yaxis.axis_label = 'Price'
 p1.left[0].formatter.use_scientific = False
 hover = HoverTool(tooltips = [("Year", "@productionDate"), ('Price', '@price'), ('Mileage', '@mileage'), ('Trim','@trim')])
 p1.add_tools(hover)
-url = "https://@url"
+url = "@url"
 taptool = p1.select(type = TapTool)
 taptool.callback = OpenURL(url=url)
 
@@ -36,7 +36,7 @@ p2.yaxis.axis_label = 'Price'
 p2.left[0].formatter.use_scientific = False
 hover = HoverTool(tooltips = [("Year", "@productionDate"), ('Price', '@price'), ('Mileage', '@mileage')])
 p2.add_tools(hover)
-url = "https://@url"
+url = "@url"
 taptool = p2.select(type = TapTool)
 taptool.callback = OpenURL(url=url)
 show(p2)
