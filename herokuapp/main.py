@@ -9,7 +9,7 @@ from bokeh.layouts import row,column, widgetbox
 from bokeh.io import curdoc,show, output_file
 
 
-df2 = pd.read_csv('highlander.csv')
+df2 = pd.read_csv('herokuapp/data/highlander.csv')
 source2 = ColumnDataSource(df2)
 p2 = figure(title = "Highlander cost per year", plot_width = 900, plot_height = 900,
            tools="pan,wheel_zoom,box_zoom,reset,tap")
