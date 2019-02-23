@@ -22,8 +22,7 @@ p2.add_tools(hover)
 url = "@url"
 taptool = p2.select(type = TapTool)
 taptool.callback = OpenURL(url=url)
-#show(p2)
+show(p2)
 
 #show(p1)
 curdoc().add_root(p2)
-show(p2)
