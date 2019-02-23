@@ -26,3 +26,4 @@ taptool.callback = OpenURL(url=url)
 
 #show(p1)
 curdoc().add_root(p2)
+show(p2)
